@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+ #header{
+ 	border: solid;
+ 	text-align: center;
+ }
+ #main{
+ 	
+ }
+
+ #footer{
+ 	text-align: right;
+ 	background-color: pink;
+ }
+</style>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h2>g231k020 課題ページ</h2>
+			<h5>你好〜我是日本人的菅原遼介!請多多指教 :)</h5>
+			<img src="https://si0.twimg.com/profile_images/1182958704/9a09649f-0b54-4c57-8c91-60d76cbcabfa_bigger.jpg" onMouseOver="notice();" />
+			<span>道を知っていることと実際に歩くことは違う</span>
+			<a href="http://twitter.com/n0bisuke" onClick="alert('ツイッターに飛びます!');" >のびすけ</a>
+		</div>
+		<div id="main">
+			<div id="left">
+				<ul>
+					<li>第三回 2013/10/10
+						<ul>
+							<li>基礎課題1 <a href="">動作ページ</a> <a href="">Gist</a></li>
+							<li>基礎課題2 <a href="">動作ページ</a> <a href="">Gist</a></li>
+							<li>発展課題 <a href="">動作ページ</a> <a href="">Gist</a></li>
+						</ul>
+					</li>
+					<li>第二回 2013/10/3
+						<ul>
+							<li>基礎課題1 <a href="">動作ページ</a> <a href="">Gist</a></li>
+							<li>基礎課題2 <a href="">動作ページ</a> <a href="">Gist</a></li>
+							<li>基礎課題3 <a href="">動作ページ</a> <a href="">Gist</a></li>
+							<li>発展課題 <a href="">動作ページ</a> <a href="">Gist</a></li>
+						</ul>
+					</li>
+					<li>第一回 2013/9/26
+						<ul>
+							<li>基礎課題 <a href="">動作ページ</a> <a href="">Gist</a></li>
+							<li>発展課題 <a href="">動作ページ</a> <a href="">Gist</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<script>
+			function notice(){
+				//alert("送信しますよ？");
+				if(window.confirm('本当にいいんですね？')){
+
+				}else{
+					location.href= ".";
+				}
+			}
+			</script>
+			<div id="right">
+				<form action="." method="post">
+					<input type="text" name="test">
+					<input type="submit" value="送信" onClick="notice();">
+				</form>
+			</div>
+		</div>
+		<div id="footer">
+			produced by n0bisuke
+		</div>
+	</div>
+</body>
+</html>

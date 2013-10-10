@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>フォームの利用</title>
+</head>
+<body>
+
+<h3>アンケート結果</h3>
+<ul>
+	<li>
+		質問1 自分が得意だと思うことを選択して下さい。 -> [回答] プログラミング,土下座
+	</li>
+	<li>質問2 今回の内容で興味のあるトピックを選択して下さい。 -> [回答] HTML,CSS,JavaScript,PHP</li>
+	<li>質問3 最近見ていたドラマを選択して下さい。 -> [回答] あまちゃん,半沢直紀</li>
+</ul>
+
+
+<form action="form.php" method="post">
+	Q1+1=?
+	<input type="text" name="answer[]" />
+	Q1*2=?
+	<input type="text" name="answer[]" />
+	Q4÷2=?
+	<input type="text" name="answer[]" />
+	<input type="submit" />
+</form>
+
+<!-- 質問2 今回の内容で興味のあるトピックを選択して下さい。<br />
+<input type="checkbox" name="q1" value="その1"> Html
+<input type="checkbox" name="q1" value="その2"> CSS
+<input type="checkbox" name="q1" value="その3"> JavaScript
+<input type="checkbox" name="q1" value="その4"> PHP -->
+
+<!-- <p><input type="submit" value="送信する"></p> -->
+
+</form>
+</body>
+</html>

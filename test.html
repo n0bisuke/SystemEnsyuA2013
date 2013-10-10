@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.nihon{ /*クラスでの指定 class="nihon"の要素の背景を黄色へ、文字をセンタリング*/
+			background-color: yellow;
+			text-align: center;
+		}
+		.nihon span{ /*[子要素] class="nihon"の中のspan要素の文字の大きさを40pxへ*/
+			font-size: 40px;
+		}
+
+		#gaikoku{ /*idでの指定 id="gaikoku"の要素の背景を緑へ、文字を白へ*/
+			color:white;
+			background-color: green;	
+		}
+		#english{ /* id="enlglish"の要素内の文字を赤に*/
+			color:red;
+		}
+		#english + p{ /*[兄弟要素] id="english"に隣接するpタグの文字を黒に*/
+			color: black;
+		}
+
+		#english + p > span{ /*[甥っ子(?)要素] id="english"に隣接するpタグの子要素*/
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="gaikoku">
+		<p>めるしー</p>
+		<p id="english">へろー</p>
+		<p>にーはおー
+			<span>うぉーあいにー
+				<p>♡</p>
+			</span>
+		</p>
+	</div>
+	<div class="nihon">
+		<p>こんにちは</p>
+		<span>ちーっす</span>
+	</div>
+</body>
+</html>
+
+<a href=”http://twitter.com/n0bisuke”
+   onClick=”alert(‘ツイッターに飛びます!’);“ >のびすけ</a>
