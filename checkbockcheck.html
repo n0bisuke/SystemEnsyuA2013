@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	function check(){
+		var count = 0; //未チェック数を記録
+		var length = document.chbox.length - 1; //選択肢数
+		for(var i = 0; i < length; i++){ //未チェックはカウントアップ(count++)
+			if(document.chbox.elements[i].checked == false)count++;
+		}
+		if(count == length){ //未チェック数と選択肢数が一致(=全部選択していない)
+			alert('1つもチェックが入ってない!');
+			return false; // 送信を中止
+		}else{
+			alert('だよね!');
+			return true; // 送信
+		}
+	}
+	</script>
+</head>
+<body>
+	好きなテキストエディタは?<br />
+	<form action="http://liginc.co.jp/designer/archives/6774" method="post" onSubmit="return check();" name="chbox">
+		<input type="checkbox" name="hoge[]" value="Sublime" />SublimeText <br />
+		<input type="checkbox" name="hoge[]" value="Sublime" />やっぱりSublimeText<br />
+		<input type="checkbox" name="hoge[]" value="Sublime" />それでもSublimeText<br />
+		<input type="checkbox" name="hoge[]" value="Sublime" />結局SublimeText<br />
+		<input type="submit" />
+	</form>
+</body>
+</html>
