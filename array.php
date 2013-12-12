@@ -4,7 +4,6 @@
 	$list[1] = "furudate";
 	$list[2] = "sugawara";
 	$list[3] = array("tetsuka", "fukusaka");
-
 	/*var_dump($list);
 	echo $list[3][1];*/
 ?>
